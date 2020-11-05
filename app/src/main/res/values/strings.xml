@@ -18,7 +18,11 @@
     <string name="photo">Photo</string>
     <string name="selamat_datang">Selamat Datang\nLukman Harun</string>
     <string name="simpan_dan_lanjutkan">Simpan dan Lanjutkan</string>
-    <string name="now_playing">Now Playing</string>
     <string name="coming_soon">Coming Sun</string>
+    <string name="judul_film">Habibie Ainun:Drama</string>
+    <string name="deskripsi_film">
+        Rudy Habibie seorang genius ahli pesawat terbang yang punya mimpi besar.
+        Berbakti kepada bangsa Indonesia dengan membuat pesawat terbang untuk menyatukan Indonesia.
+    </string>
 
 </resources>
