@@ -18,5 +18,7 @@
     <string name="photo">Photo</string>
     <string name="selamat_datang">Selamat Datang\nLukman Harun</string>
     <string name="simpan_dan_lanjutkan">Simpan dan Lanjutkan</string>
+    <string name="now_playing">Now Playing</string>
+    <string name="coming_soon">Coming Sun</string>
 
 </resources>
