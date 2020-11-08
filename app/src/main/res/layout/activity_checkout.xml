@@ -16,12 +16,29 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="24dp"
-        android:background="@drawable/shape_rectangle_pink"
-        android:text="@string/beli_tiket"
+        android:background="@color/colorBlueGrey"
+        android:text="@string/batalkan"
         android:textColor="@color/colorWhite"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.532"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/shape_rectangle_pink"
+        android:text="@string/bayar_sekarang"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -34,7 +51,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:gravity="center"
-        android:text="@string/pilih_bangku"
+        android:text="@string/checkout"
         android:textColor="@color/colorWhite"
         android:textSize="24sp"
         android:textStyle="bold"
@@ -54,128 +71,199 @@
         app:srcCompat="@drawable/ic_baseline_arrow_back_white_24" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/textView21"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
         android:layout_marginTop="32dp"
-        android:text="Habibie Ainun"
+        android:text="@string/when"
         android:textColor="@color/colorWhite"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView" />
 
-    <ImageView
-        android:id="@+id/imageView7"
-        android:layout_width="wrap_content"
-        android:layout_height="150dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView17"
-        app:srcCompat="@drawable/ic_path" />
-
     <TextView
-        android:id="@+id/textView18"
+        android:id="@+id/textView35"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginRight="16dp"
-        android:text="Layar Bioskop"
+        android:layout_marginTop="32dp"
+        android:text="E-Wallet"
         android:textColor="@color/colorWhite"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:textSize="18sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView7" />
+        app:layout_constraintTop_toBottomOf="@+id/textView33" />
 
-    <LinearLayout
-        android:padding="10dp"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
+    <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
         android:layout_marginTop="16dp"
-        android:orientation="horizontal"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:text="Total Harus Dibayar"
+        android:textAppearance="@style/TextAppearance.AppCompat.Small"
+        android:textColor="@color/colorWhite"
+        android:textSize="14sp"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView18">
-
-        <ImageView
-            android:src="@drawable/shape_line_blue_grey"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_marginRight="20dp"/>
-        <ImageView
-            android:src="@drawable/shape_line_blue_grey"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent" />
-        <TextView
-            android:text="A"
-            android:layout_width="0dp"
-            android:layout_weight="1"
-            android:layout_height="match_parent"
-            android:textColor="@color/colorWhite"
-            android:gravity="center"
-            />
-        <ImageView
-            android:src="@drawable/shape_line_blue_grey"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_marginRight="50dp"
-            android:layout_height="match_parent" />
-        <ImageView
-            android:src="@drawable/shape_line_blue_grey"
-            android:layout_weight="1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent" />
-    </LinearLayout>
+        app:layout_constraintTop_toBottomOf="@+id/textView31" />
 
     <TextView
-        android:id="@+id/textView19"
+        android:id="@+id/textView23"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginBottom="24dp"
-        android:text="Booked"
-        android:drawablePadding="10dp"
-        android:drawableLeft="@drawable/ic_rectangle_full"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/ic_calendar_today"
+        android:drawablePadding="5dp"
+        android:text="@string/datetime"
         android:textColor="@color/colorWhite"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
 
     <TextView
-        android:id="@+id/textView20"
+        android:id="@+id/textView24"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginBottom="24dp"
-        android:drawableLeft="@drawable/ic_rectangle_empty"
-        android:drawablePadding="10dp"
-        android:text="Empty"
-        android:textColor="@color/colorWhite"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintStart_toEndOf="@+id/textView19" />
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/ic_local_movies"
+        android:drawablePadding="5dp"
+        android:text="@string/cinema"
+        android:textColor="@color/colorWhiteGrey"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView23" />
 
     <TextView
-        android:id="@+id/textView22"
+        android:id="@+id/textView26"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="25 Okt, 10 AM"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView23" />
+
+    <TextView
+        android:id="@+id/textView27"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="Depok Mall, Cinema 3"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/textView24"
+        app:layout_constraintTop_toTopOf="@+id/textView24" />
+
+    <TextView
+        android:id="@+id/textView28"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginBottom="24dp"
-        android:text="Selected"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
-        app:layout_constraintStart_toEndOf="@+id/textView20"
-        android:drawablePadding="10dp"
-        android:drawableLeft="@drawable/ic_rectangle_color_pink"
+        android:layout_marginTop="32dp"
+        android:text="Items"
         android:textColor="@color/colorWhite"
-        />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView24" />
+
+    <TextView
+        android:id="@+id/textView29"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/ic_event_seat"
+        android:drawablePadding="5dp"
+        android:text="Seat No C1"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView28" />
+
+    <TextView
+        android:id="@+id/textView31"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/ic_event_seat"
+        android:drawablePadding="5dp"
+        android:text="Seat No C2"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView29" />
+
+    <TextView
+        android:id="@+id/textView37"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        android:drawableLeft="@drawable/ic_wallet"
+        android:drawablePadding="5dp"
+        android:text="Total Balance"
+        android:textColor="@color/colorWhite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView35" />
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="IDR 70.000"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView29" />
+
+    <TextView
+        android:id="@+id/textView32"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="IDR 70.000"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView31" />
+
+    <TextView
+        android:id="@+id/textView34"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="IDR 140.000"
+        android:textColor="@color/colorWhite"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView33" />
+
+    <TextView
+        android:id="@+id/textView38"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:text="IDR 200.000"
+        android:textColor="@color/hijau"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView37" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

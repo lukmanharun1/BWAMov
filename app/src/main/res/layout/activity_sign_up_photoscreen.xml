@@ -8,7 +8,7 @@
     tools:context="onboarding.OnboardingOneActivity">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_home"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -16,7 +16,7 @@
         android:layout_marginEnd="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="24dp"
-        android:background="@drawable/shape_rectangle_grey"
+        android:background="@drawable/shape_rectangle_blue_grey"
         android:text="@string/upload"
         android:textColor="@color/colorWhite"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -25,7 +25,7 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <Button
-        android:id="@+id/button3"
+        android:id="@+id/btn_save"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -37,7 +37,7 @@
         android:text="@string/simpan_dan_lanjutkan"
         android:textColor="@color/colorWhite"
         android:visibility="invisible"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/btn_home"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent" />
@@ -72,22 +72,38 @@
         app:srcCompat="@drawable/ic_baseline_arrow_back_white_24" />
 
     <TextView
-        android:id="@+id/textView7"
+        android:id="@+id/tv_hello"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="24dp"
         android:text="@string/selamat_datang"
         android:textColor="@color/colorWhite"
-        tools:layout_editor_absoluteX="18dp"
-        tools:layout_editor_absoluteY="93dp" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
     <ImageView
-        android:id="@+id/imageView4"
+        android:id="@+id/iv_profile"
         android:layout_width="200dp"
         android:layout_height="200dp"
-        app:layout_constraintBottom_toBottomOf="@+id/button2"
+        app:layout_constraintBottom_toBottomOf="@+id/btn_home"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/textView"
         app:srcCompat="@drawable/user_pic" />
+
+    <ImageView
+        android:id="@+id/iv_add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/shape_eclipse_white"
+        app:layout_constraintBottom_toBottomOf="@+id/iv_profile"
+        app:layout_constraintEnd_toEndOf="@+id/iv_profile"
+        app:srcCompat="@drawable/ic_btn_upload"
+        tools:ignore="VectorDrawableCompat" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

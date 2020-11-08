@@ -25,5 +25,20 @@
         Berbakti kepada bangsa Indonesia dengan membuat pesawat terbang untuk menyatukan Indonesia.
     </string>
     <string name="pilih_bangku">Pilih Bangku</string>
+    <string name="beli_tiket">Beli Tiket</string>
+    <string name="checkout">Checkout</string>
+    <string name="bayar_sekarang">Bayar Sekarang</string>
+    <string name="batalkan">Batalkan</string>
+    <string name="when">When</string>
+    <string name="datetime">Date and Time</string>
+    <string name="cinema">Cinema</string>
+    <string name="simpan_data">Simpan Data Baru</string>
+    <string name="edit_profile">Edit Profile</string>
+    <string name="my_wallet">My Wallet</string>
+    <string name="my_history">My History</string>
+    <string name="masuk_akun">MASUK AKUN</string>
+    <string name="daftar_akun_baru">DAFTAR AKUN BARU</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
