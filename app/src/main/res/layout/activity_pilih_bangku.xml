@@ -8,7 +8,7 @@
     tools:context="onboarding.OnboardingOneActivity">
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/btn_home"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -19,6 +19,8 @@
         android:background="@drawable/shape_rectangle_pink"
         android:text="@string/beli_tiket"
         android:textColor="@color/colorWhite"
+        android:visibility="invisible"
+        tools:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.532"
@@ -54,7 +56,7 @@
         app:srcCompat="@drawable/ic_baseline_arrow_back_white_24" />
 
     <TextView
-        android:id="@+id/textView17"
+        android:id="@+id/tv_kursi"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="32dp"
@@ -74,7 +76,7 @@
         android:layout_marginRight="16dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView17"
+        app:layout_constraintTop_toBottomOf="@+id/tv_kursi"
         app:srcCompat="@drawable/ic_path" />
 
     <TextView
@@ -92,47 +94,105 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView7" />
 
     <LinearLayout
-        android:padding="10dp"
+        android:id="@+id/linearLayout2"
         android:layout_width="match_parent"
         android:layout_height="60dp"
         android:layout_marginLeft="16dp"
-        android:layout_marginRight="16dp"
         android:layout_marginTop="16dp"
+        android:layout_marginRight="16dp"
         android:orientation="horizontal"
+        android:padding="10dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView18">
 
         <ImageView
-            android:src="@drawable/shape_line_blue_grey"
-            android:layout_weight="1"
             android:layout_width="0dp"
             android:layout_height="match_parent"
-            android:layout_marginRight="20dp"/>
-        <ImageView
-            android:src="@drawable/shape_line_blue_grey"
+            android:layout_marginRight="20dp"
             android:layout_weight="1"
+            android:src="@drawable/shape_line_blue_grey" />
+
+        <ImageView
             android:layout_width="0dp"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/shape_line_blue_grey" />
+
         <TextView
-            android:text="A"
             android:layout_width="0dp"
-            android:layout_weight="1"
             android:layout_height="match_parent"
-            android:textColor="@color/colorWhite"
+            android:layout_weight="1"
             android:gravity="center"
-            />
+            android:text="A"
+            android:textColor="@color/colorWhite" />
+
         <ImageView
-            android:src="@drawable/shape_line_blue_grey"
-            android:layout_weight="1"
+            android:id="@+id/a3"
             android:layout_width="0dp"
+            android:layout_height="match_parent"
             android:layout_marginRight="50dp"
-            android:layout_height="match_parent" />
-        <ImageView
-            android:src="@drawable/shape_line_blue_grey"
             android:layout_weight="1"
+            android:src="@drawable/shape_line_blue_grey" />
+
+        <ImageView
+            android:id="@+id/a4"
             android:layout_width="0dp"
-            android:layout_height="match_parent" />
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/shape_line_blue_grey" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:layout_weight="1"
+            android:src="@drawable/shape_line_blue_grey" />
+
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/shape_line_blue_grey" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="B"
+            android:textColor="@color/colorWhite" />
+
+        <ImageView
+            android:id="@+id/imageview7"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="50dp"
+            android:layout_weight="1"
+            android:src="@drawable/shape_line_blue_grey" />
+
+        <ImageView
+            android:id="@+id/imageview8"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/shape_line_blue_grey" />
     </LinearLayout>
 
     <TextView
@@ -146,7 +206,7 @@
         android:drawablePadding="10dp"
         android:drawableLeft="@drawable/ic_rectangle_full"
         android:textColor="@color/colorWhite"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/btn_home"
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
@@ -160,7 +220,7 @@
         android:drawablePadding="10dp"
         android:text="Empty"
         android:textColor="@color/colorWhite"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/btn_home"
         app:layout_constraintStart_toEndOf="@+id/textView19" />
 
     <TextView
@@ -171,7 +231,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginBottom="24dp"
         android:text="Selected"
-        app:layout_constraintBottom_toTopOf="@+id/button2"
+        app:layout_constraintBottom_toTopOf="@+id/btn_home"
         app:layout_constraintStart_toEndOf="@+id/textView20"
         android:drawablePadding="10dp"
         android:drawableLeft="@drawable/ic_rectangle_color_pink"

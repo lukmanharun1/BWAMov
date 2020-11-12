@@ -57,19 +57,17 @@ class SignInActivity : AppCompatActivity() {
                 var user = dataSnapshot.getValue(User::class.java)
                 if(user == null) {
                     Toast.makeText(this@SignInActivity, "Username / Password salah", Toast.LENGTH_LONG).show()
+                } else if (user.password.equals(iPassword)) {
+                    preferance.setValue("nama", user.nama.toString())
+                    preferance.setValue("user", user.username.toString())
+                    preferance.setValue("url", user.url.toString())
+                    preferance.setValue("email", user.email.toString())
+                    preferance.setValue("saldo", user.saldo.toString())
+                    preferance.setValue("status", "1")
+                    var intent = Intent(this@SignInActivity, HomeActivity::class.java)
+                    startActivity(intent)
                 } else {
-                    if(user.password.equals(iPassword)) {
-                        preferance.setValue("nama", user.nama.toString())
-                        preferance.setValue("user", user.username.toString())
-                        preferance.setValue("url", user.url.toString())
-                        preferance.setValue("email", user.email.toString())
-                        preferance.setValue("saldo", user.saldo.toString())
-                        preferance.setValue("status", "1")
-                        var intent = Intent(this@SignInActivity, HomeActivity::class.java)
-                        startActivity(intent)
-                    } else {
-                        Toast.makeText(this@SignInActivity, "Username / Password salah", Toast.LENGTH_LONG).show()
-                    }
+                    Toast.makeText(this@SignInActivity, "Username / Password salah", Toast.LENGTH_LONG).show()
                 }
             }
         })

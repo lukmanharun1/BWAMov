@@ -25,7 +25,7 @@ class SignUpActivity : AppCompatActivity() {
 
         mFirebaseInstance = FirebaseDatabase.getInstance()
         mDatabase = FirebaseDatabase.getInstance().getReference()
-        mDatabaseReference = mFirebaseInstance.getReference("Username")
+        mDatabaseReference = mFirebaseInstance.getReference("User")
         btn_lanjutkan.setOnClickListener {
             sUsername = et_username.text.toString()
             sPassword = et_password.text.toString()

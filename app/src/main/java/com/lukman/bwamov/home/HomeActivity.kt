@@ -5,12 +5,16 @@ import android.os.Bundle
 import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import com.lukman.bwamov.R
+import com.lukman.bwamov.home.dashboard.DashboardFragment
+import com.lukman.bwamov.home.tiket.TiketFragment
 import kotlinx.android.synthetic.main.activity_home.*
 
 class HomeActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_sign_up)
+        setContentView(R.layout.activity_home)
+        val fragmentTiket = TiketFragment()
+        val fragmentSetting = SettingFragment()
         val fragmentHome = DashboardFragment()
         setFragment(fragmentHome)
 
@@ -21,10 +25,16 @@ class HomeActivity : AppCompatActivity() {
             changeIcon(iv_menu3, R.drawable.ic_profile)
         }
         iv_menu2.setOnClickListener {
-            setFragment(fragmentHome)
+            setFragment(fragmentTiket)
             changeIcon(iv_menu1, R.drawable.ic_home)
             changeIcon(iv_menu2, R.drawable.ic_tiket_active)
             changeIcon(iv_menu3, R.drawable.ic_profile)
+        }
+        iv_menu3.setOnClickListener {
+            setFragment(fragmentSetting)
+            changeIcon(iv_menu1, R.drawable.ic_home)
+            changeIcon(iv_menu2, R.drawable.ic_tiket)
+            changeIcon(iv_menu3, R.drawable.ic_profile_active)
         }
     }
     private fun setFragment(fragment: Fragment) {

@@ -9,11 +9,11 @@
     <androidx.constraintlayout.widget.ConstraintLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".home.DashboardFragment"
+    tools:context=".home.dashboard.DashboardFragment"
         android:background="@drawable/shape_backgroud_blue">
 
     <TextView
-        android:id="@+id/tv_name"
+        android:id="@+id/tv_nama"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
@@ -37,7 +37,7 @@
         android:drawablePadding="20dp"
         android:textColor="@color/colorWhite"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/tv_name"
+        app:layout_constraintTop_toBottomOf="@+id/tv_nama"
         android:drawableLeft="@drawable/ic_wallet"
         tools:text="IDR 280.000" />
 
