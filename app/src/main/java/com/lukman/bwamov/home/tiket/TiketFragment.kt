@@ -1,11 +1,19 @@
 package com.lukman.bwamov.home.tiket
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
+import androidx.recyclerview.widget.LinearLayoutManager
+import com.google.firebase.database.*
 import com.lukman.bwamov.R
+import com.lukman.bwamov.home.dashboard.ComingSoonAdapter
+import com.lukman.bwamov.model.Film
+import com.lukman.bwamov.utils.Preferances
+import kotlinx.android.synthetic.main.fragment_tiket.*
 
 // TODO: Rename parameter arguments, choose names that match
 // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
@@ -18,6 +26,9 @@ private const val ARG_PARAM2 = "param2"
  * create an instance of this fragment.
  */
 class TiketFragment : Fragment() {
+    private lateinit var preference:Preferances
+    private lateinit var mDatabase : DatabaseReference
+    private var dataList = ArrayList<Film>()
     // TODO: Rename and change types of parameters
     private var param1: String? = null
     private var param2: String? = null
@@ -56,5 +67,36 @@ class TiketFragment : Fragment() {
                     putString(ARG_PARAM2, param2)
                 }
             }
+    }
+
+    override fun onActivityCreated(savedInstanceState: Bundle?) {
+        super.onActivityCreated(savedInstanceState)
+        preference = Preferances(context!!)
+        mDatabase = FirebaseDatabase.getInstance().getReference("Film")
+        rc_tiket.layoutManager = LinearLayoutManager(context)
+        getData()
+
+    }
+
+    private fun getData() {
+        mDatabase.addValueEventListener(object : ValueEventListener {
+            override fun onCancelled(p0: DatabaseError) {
+                Toast.makeText(context, "" + p0, Toast.LENGTH_LONG).show()
+            }
+
+            override fun onDataChange(p0: DataSnapshot) {
+                dataList.clear()
+                for (getdataSnapshot in p0.children) {
+                    val film = getdataSnapshot.getValue(Film::class.java)
+                    dataList.add(film!!)
+                }
+                rc_tiket.adapter = ComingSoonAdapter(dataList) {
+                    var intent = Intent(context, TiketActivity::class.java).putExtra("data", it)
+                    startActivity(intent)
+                }
+                tv_total.setText("${dataList.size}Movies")
+            }
+
+        })
     }
 }
