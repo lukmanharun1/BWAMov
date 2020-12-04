@@ -5,7 +5,11 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.os.Handler
 import onboarding.OnboardingOneActivity
-
+/*
+* ini adalah activitiy pertama yang akan dirun
+* tidak ada fitur spesial disini
+* beberapa detik saja
+* */
 class SplashScreenActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
