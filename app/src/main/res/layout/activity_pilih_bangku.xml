@@ -107,16 +107,14 @@
         app:layout_constraintTop_toBottomOf="@+id/textView18">
 
         <ImageView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_marginRight="20dp"
-            android:layout_weight="1"
             android:src="@drawable/shape_line_blue_grey" />
 
         <ImageView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:src="@drawable/shape_line_blue_grey" />
 
         <TextView
@@ -129,17 +127,15 @@
 
         <ImageView
             android:id="@+id/a3"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_marginRight="50dp"
-            android:layout_weight="1"
             android:src="@drawable/shape_line_blue_grey" />
 
         <ImageView
             android:id="@+id/a4"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:src="@drawable/shape_line_blue_grey" />
     </LinearLayout>
 
@@ -159,16 +155,14 @@
         app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
 
         <ImageView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_marginRight="20dp"
-            android:layout_weight="1"
             android:src="@drawable/shape_line_blue_grey" />
 
         <ImageView
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:src="@drawable/shape_line_blue_grey" />
 
         <TextView
@@ -181,17 +175,15 @@
 
         <ImageView
             android:id="@+id/imageview7"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:layout_marginRight="50dp"
-            android:layout_weight="1"
             android:src="@drawable/shape_line_blue_grey" />
 
         <ImageView
             android:id="@+id/imageview8"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:layout_weight="1"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
             android:src="@drawable/shape_line_blue_grey" />
     </LinearLayout>
 

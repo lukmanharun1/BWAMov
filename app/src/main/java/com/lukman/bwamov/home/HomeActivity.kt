@@ -6,6 +6,7 @@ import android.widget.ImageView
 import androidx.fragment.app.Fragment
 import com.lukman.bwamov.R
 import com.lukman.bwamov.home.dashboard.DashboardFragment
+import com.lukman.bwamov.home.setting.SettingFragment
 import com.lukman.bwamov.home.tiket.TiketFragment
 import kotlinx.android.synthetic.main.activity_home.*
 

@@ -37,7 +37,7 @@ class PilihBangkuActivity : AppCompatActivity() {
         }
 
         a4.setOnClickListener {
-            if (statusA3) {
+            if (statusA4) {
                 a4.setImageResource(R.drawable.ic_rectangle_empty)
                 statusA4 = false
                 total -= 1
