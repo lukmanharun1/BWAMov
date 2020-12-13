@@ -86,6 +86,8 @@ class DashboardFragment : Fragment() {
         tv_nama.setText(preferences.getValues("nama"))
         if (preferences.getValues("saldo").equals("0")) {
             currency(preferences.getValues("saldo")?.toDouble()!!, tv_saldo)
+        } else {
+            tv_saldo.setText("IDR " + preferences.getValues("saldo"))
         }
         Glide.with(this)
             .load(preferences.getValues("url"))

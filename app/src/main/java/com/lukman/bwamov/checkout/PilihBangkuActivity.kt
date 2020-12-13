@@ -52,7 +52,9 @@ class PilihBangkuActivity : AppCompatActivity() {
             }
         }
         btn_home.setOnClickListener {
-            var intent = Intent(this, CheckoutActivity::class.java).putExtra("data", dataList)
+            var intent = Intent(this, CheckoutActivity::class.java)
+                .putExtra("data", dataList)
+                .putExtra("datas", data)
             startActivity(intent)
         }
     }

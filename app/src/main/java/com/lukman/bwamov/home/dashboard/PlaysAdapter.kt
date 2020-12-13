@@ -37,7 +37,7 @@ class PlaysAdapter(private var data : List<Plays>,
         private val tvImage : ImageView = view.findViewById(R.id.iv_poster_image)
 
         fun bindItem(data: Plays, listener: (Plays) -> Unit, context: Context) {
-            tvTitle.setText(data.nama)
+            tvTitle.text = data.nama
             Glide.with(context)
                 .load(data.url)
                 .apply(RequestOptions.circleCropTransform())
